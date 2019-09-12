@@ -1,0 +1,113 @@
+li{
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+	color: #424242;
+	font-size: 18px;
+	height: 60px;
+    line-height: 60px;
+    transition: 0.2s linear;
+    background-color: white;
+}
+span{
+    height: 40px;
+	width: 0px;    
+    cursor: pointer;    
+    margin: 10px;
+    transition: 0.2s linear;
+}
+.title{
+    cursor: pointer;
+}
+.done{
+    text-decoration: line-through;
+}
+.info{
+    margin-right: 10px;
+}
+.trash:hover{
+    color: #ff2b2b;
+    opacity: 1;  
+}
+.check:hover{
+    color: #1ff438;
+}
+.edit:hover{
+    color:#3295ff;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+.show span{
+    height: 20px;
+}
+.near{
+    background-color: #3dff81;
+}
+.past{
+    background-color: #ff4959;
+}
+.dropbtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    color: #424242;
+}
+.dropbtn:focus{
+    outline: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transform: translate(52px, -60px);
+    vertical-align: center;
+}
+.dropdown-content:before{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -20px;
+    top: 18px;
+    border: 12px solid;
+    border-color: #F9F9F9 transparent transparent transparent;
+    transform: rotate(90deg);
+}
+
+@media (max-width: 700px) {
+    li{
+        font-size: 2.5vw;
+        height: 10vw;
+        line-height: 10vw;
+    }
+    .dropdown-content{
+        transform: translate(-60px, 0px);
+        font-size: 13px;
+    }
+    .dropdown-content{
+        width: 100px;
+    }
+    .dropdown-content:before{
+        content: ' ';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 70px;
+        top: -20px;
+        border: 10px solid;
+        border-color: transparent transparent#F9F9F9 transparent;
+    }
+}

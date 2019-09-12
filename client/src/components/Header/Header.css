@@ -1,0 +1,50 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	background-color: #2573c6;
+	color: white;
+	margin: 0;
+	padding: 2% 2%;
+}
+.header h1{
+    font-weight: normal;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+.newTodo{
+    margin-right: 10px;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    font-size: 30px;
+    transition: 0.15s all linear;
+    vertical-align: baseline;
+}
+.rot{
+    transform-origin: 50% 50%;
+    transform: rotate(-45deg);
+}
+
+.newTodo .svg-inline--fa.fa-w-14{
+    vertical-align: baseline;
+}
+
+@media (max-width: 700px) {
+	.header{
+        height: 12vw;
+    }
+    .header h1{
+        font-size: 5vw;
+    }
+    .newTodo{
+        font-size: 23px;
+        margin-top: 20px;
+    }
+    .rot{
+        transform-origin: 50% 40%;
+        transform: rotate(-45deg);
+    }
+}
